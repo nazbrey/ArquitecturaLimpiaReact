@@ -5,11 +5,14 @@ import Title from "../atoms/Title";
 
 
 const RegisForm: React.FC = () =>{
+
+
     return(
         <form className=" flex flex-col items-center ">
 
         <Title text="Register" />
-        <FloatingLabelInput label="Name" type="text" required/>
+        <FloatingLabelInput label="Name" type="text"  required/>
+        <FloatingLabelInput label="Lat Name 2" type="text" />
         <FloatingLabelInput label="Last Name" type="text" required/>
         <FloatingLabelInput label="Phone" type="text" required/>
         <FloatingLabelInput label="Email" type="email" required/>
