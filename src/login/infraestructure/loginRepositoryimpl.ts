@@ -8,8 +8,8 @@ export class LoginRepositoryImpl implements LoginRepository {
     async authenticate(login: Login): Promise<{ success: boolean; token?: string; user?: any }> {
       toast.info('Conectado al repositorio implementacion ');
       try {
-        const response = await apiClient.post<{ success: boolean; token: string; user: any }>('/login', {
-          username: login.username,
+        const response = await apiClient.post<{ success: boolean; token: string; user: any }>('/auth/login', {
+          mail: login.mail,
           password: login.password,
         });
   

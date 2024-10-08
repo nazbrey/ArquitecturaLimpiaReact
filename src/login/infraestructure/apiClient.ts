@@ -1,7 +1,7 @@
 import { toast } from "react-toastify";
 
 
-const API_BASE_URL = 'https://example.com/api'; // Reemplaza con la URL real de tu API
+const API_BASE_URL ='https://f30gmgn2-3301.use2.devtunnels.ms'; // Reemplaza con la URL real de tu API
 
 const apiClient = {
   async post<T>(endpoint: string, data: any): Promise<T> {
@@ -24,7 +24,7 @@ const apiClient = {
     
     return response.json();
   },
-  
+
   // OBTENER 
   async get<T>(endpoint: string, token?: string): Promise<T> {
     const headers: HeadersInit = { 'Content-Type': 'application/json' };
