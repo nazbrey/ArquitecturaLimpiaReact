@@ -44,3 +44,6 @@ Thumbs.db
 # Archivos de variables de entorno
 .env
 .env.*
+
+#ignorar vite
+.vite/
