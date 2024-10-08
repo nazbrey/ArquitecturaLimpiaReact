@@ -9,7 +9,7 @@ const RegisForm: React.FC = () =>{
         <form className=" flex flex-col items-center ">
 
         <Title text="Register" />
-        <FloatingLabelInput label="Name" type="text" required/>
+        <FloatingLabelInput label="Name" type="text"  required/>
         <FloatingLabelInput label="Last Name" type="text" required/>
         <FloatingLabelInput label="Phone" type="text" required/>
         <FloatingLabelInput label="Email" type="email" required/>
